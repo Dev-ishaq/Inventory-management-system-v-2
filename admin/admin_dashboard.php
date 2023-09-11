@@ -40,7 +40,7 @@
               <li><a href="../admin/reg.php"><i class="fas fa-user-plus"></i> <span>Add Staff</span></a></li>
               <li><a href="../staff/staff_dashboard.php"><i class="fa fa-eye"></i> <span>View Staff</span></a></li>
               <li><a href="../buy/buy_product.php"><i class="fa fa-shopping-bag"></i> <span>Add Product</span></a></li>
-              <li><a href="../sell/manage_product.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
+              <li><a href="../buy/view_product.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
               <li><a href="../sells/sell_product.php"><i class="fa fa-shopping-bag"></i> <span>Sell Product</span></a></li>
               <li><a href="../sells/manage_product.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
               <li><a href="../hist/history.php"><i class="fa fa-history"></i> <span>History</span></a></li>
@@ -64,7 +64,7 @@
                         <!-- <a href="#">BLOG</a> -->
                       </div>
                     </div> 
-                    <a href="landingpage.html">LOGOUT</a>
+                    <a href="../admin/landingpage.php">LOGOUT</a>
                   </div>
             </header>
             <!-- <div class="mark1" id="mark-second">
@@ -85,7 +85,7 @@
                   <a href="../staff/staff_dashboard.php">STAFFS</a>
                   <a href="#">ADMINS</a>
                   <!-- <a href="#">BLOG</a> -->
-                  <a href="landingpage.html">LOGOUT</a>
+                  <a href="../admin/landingpage.php">LOGOUT</a>
                 </div>
               </div> 
             </div>

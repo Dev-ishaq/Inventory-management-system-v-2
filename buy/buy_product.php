@@ -1,6 +1,7 @@
 <?php
 
     include "../config/server.php";
+    include "../config/process.php";
 
 ?>
 
@@ -24,7 +25,7 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-6 offset-md-3 mt-5">
-                <form action="reg.php" method="POST">
+                <form action="buy_product.php" method="POST">
                    
                     <h2 class="text-center text-success">COMPANY NAME</h2>
                     <div class="form-group mt-2">

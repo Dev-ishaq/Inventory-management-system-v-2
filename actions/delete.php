@@ -29,4 +29,19 @@
         }
 
 
+                // third delete
+
+        if(isset($_GET['del3'])){
+            $id = $_GET['del3'];
+            
+            $sql = "DELETE FROM buy WHERE id=$id";
+
+            $ask = $conn->query($sql);
+
+            if($ask) {
+                header("Location: ../buy/view_product.php");
+            }
+        }
+
+
 ?>
