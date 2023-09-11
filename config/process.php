@@ -129,7 +129,37 @@ if(isset($_POST['reg'])){
 
     
 
+            if(isset($_POST['buy_product-btn'])){
 
+
+
+
+
+                $sql = "INSERT INTO ims(`full_name`, `username`, `number`, `email`, `password`, `cpassword`)VALUES(?,?,?,?,?,?)";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param('ssssss', $fname, $uname, $no, $email, $pass, $cpass);
+        
+                    if($stmt->execute()){
+                            echo "
+                            <script>
+                                // swal('Done', 'Staff Added Successfully', 'success')
+                                // .then(function(result){
+                                //     if(result){
+                                //         window.location='../admin/admin_dashboard.php'
+                                //     }});
+
+
+
+
+                                
+                                alert('Registered successfully')
+                                window.location='../admin/admin_dashboard.php';
+                            </script>
+                        ";
+
+
+                        }
+            }
 
 
         
