@@ -2,9 +2,6 @@
 
     
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +61,7 @@
                         <input type="number" name="total" value="" class="form-control" required>
                     </div>
                     <div class="form-group mt-2">
-                        <button type="submit" name="reg" class="btn btn-success mt-3 form-control">BUY</button>
+                        <button type="submit" name="buy_product-btn" class="btn btn-success mt-3 form-control">BUY</button>
                     </div>
                     <a href="../admin/admin_dashboard.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
                 </form>
