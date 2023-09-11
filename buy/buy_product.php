@@ -17,11 +17,16 @@
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .row {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 offset-md-4 mt-5">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3 mt-5">
                 <form action="reg.php" method="POST">
                    
                     <h2 class="text-center text-success">COMPANY NAME</h2>
@@ -61,6 +66,7 @@
                     <div class="form-group mt-2">
                         <button type="submit" name="reg" class="btn btn-success mt-3 form-control">BUY</button>
                     </div>
+                    <a href="../admin/admin_dashboard.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
                 </form>
             </div>
         </div>

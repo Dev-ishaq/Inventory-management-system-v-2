@@ -1,4 +1,84 @@
 <?php
+
+        // SELLS PRODUCT VALIDATION
+
+        $errors = array();
+        $fname = "";
+        $uname = "";
+        $no = "";
+        $email = "";
+        $pass = "";
+        $cpass ="";
+        
+        if(isset($_POST['sells_btn_reg'])){
+            $errors = array();
+            $cname = $_POST['cname'];
+            $pname = $_POST['select'];
+            $qty = $_POST['quantity'];
+            $cprice = $_POST['costname'];
+            $sprice = $_POST['sellprice'];
+            $staff = $_POST['staff'];
+        }
+        
+            if(empty($cname)){
+                $errors['cname'] = 'Customer name is required';
+            }
+            
+            if(empty($pname)){
+                $errors['pname'] = 'Product name is required';
+            }
+            
+            if(empty($qty)){
+                $errors['qty'] = 'please select quantity';
+            }
+            
+            if(empty($cprice)){
+                $errors['cprice'] = 'Cost price is required';
+            }
+            
+            if(empty($sprice)){
+                $errors['sprice'] = 'Sell price is required';
+            }
+            
+            if(empty($staff)){
+                $errors['sprice'] = 'Staff name is required';
+            }
+        
+            if(count($errors) === 0){
+                $sql = "INSERT INTO sells(`customer_name`, `product_name`, `quantity`, `cost_price`, `Sell_price`, `staff_name`)VALUES(?,?,?,?,?,?)";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param('ssssss', $cname, $pname, $qty, $cprice, $sprice, $staff);
+        
+                    if($stmt->execute()){
+                            echo "
+                            <script>
+                                // swal('Done', 'Staff Added Successfully', 'success')
+                                // .then(function(result){
+                                //     if(result){
+                                //         window.location='../admin/admin_dashboard.php'
+                                //     }});
+        
+        
+        
+        
+                                
+                                alert('Registered successfully')
+                                window.location='../admin/admin_dashboard.php';
+                            </script>
+                        ";
+        
+        
+                        }
+                }
+        
+            
+        
+
+
+
+
+
+
     include "server.php";
 
 $errors = array();
@@ -112,7 +192,7 @@ if(isset($_POST['reg'])){
                     $sql = "UPDATE ims SET `full_name`='$fname', `username`='$uname', `number`='$no', `email`='$email', `password`='$pass', `cpassword`='$cpass' WHERE `id`='$id'";
                     $res = $conn->query($sql);
                     if($res){
-                    header("Location: ../sells/manage_product.php");
+                    header("Location: ../admin/manage_staff.php");
                     // echo "
                     //     <script>
                     //         alert('Staff Updated Successful...')
