@@ -142,6 +142,7 @@ if(isset($_POST['sells_btn_reg'])){
                         <button type="submit" name="sells_btn_reg" class="btn btn-success mt-3 form-control">Proceed to sell</button>
                     </div>
                     <a href="../admin/admin_dashboard.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
+                    <a href="../sells/sell_dashboard.php" class="btn btn-success mt-2">previous  &nbsp;<i class="fa fa-forward"></i></a>
                 </form>
             </div>
         </div>

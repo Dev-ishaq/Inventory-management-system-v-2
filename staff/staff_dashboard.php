@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory Management System</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
 <body>
@@ -52,8 +52,10 @@
                     <!-- Header section -->
             <header>
                 <div class="navbar">
+                <a href="../admin/admin_dashboard.php" class="btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
+
                     <a href="#about">ABOUT</a>
-                    <a href="#news">NEWS</a>
+                    <!-- <a href="#news">NEWS</a> -->
                     <div class="dropdown">
                       <button class="dropbtn">MANAGEMENT 
                         <i class="fa fa-caret-down"></i>
