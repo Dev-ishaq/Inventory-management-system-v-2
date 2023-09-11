@@ -42,7 +42,7 @@
               <li><a href="../buy/buy_product.php"><i class="fa fa-shopping-bag"></i> <span>Add Product</span></a></li>
               <li><a href="../buy/view_product.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
               <li><a href="../sells/sell_product.php"><i class="fa fa-shopping-bag"></i> <span>Sell Product</span></a></li>
-              <li><a href="../sells/view_sold_product.php"><i class="fa fa-eye"></i> <span>manage Product</span></a></li>
+              <li><a href="../sells/manage_product.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
               <li><a href="../hist/history.php"><i class="fa fa-history"></i> <span>History</span></a></li>
               <li><a href="../admin/landingpage.php"><i class="fa fa-backward"></i> <span>LogOut</span></a></li>
             </ul>

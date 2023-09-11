@@ -47,7 +47,7 @@
                 <th>TOTAL</th>
                 <th>STAFF NAME</th>
                 <th>DATE</th>
-                <th colspan="2">ACTION</th>
+                <th>ACTION</th>
               </tr>
             </thead>
 
@@ -73,7 +73,7 @@
                 <td><?= ($row['Sell_price']*$row['quantity']); ?></td>
                 <td><?= $row['staff_name']; ?></td>
                 <td><?= $row['date']; ?></td>
-                <td><a href="../sells/sell_product.php?edit2=<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp; Edit</a></td>
+                <!-- <td><a href="../sells/sell_product.php?edit2=<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp; Edit</a></td> -->
                 <td><a href="../actions/delete.php?del2=<?= $row['id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp; Delete</a></td>
               </tr>
             </tbody>

@@ -2,6 +2,76 @@
 
 
    include "../config/server.php";
+   $errors = array();
+$fname = "";
+$uname = "";
+$no = "";
+$email = "";
+$pass = "";
+$cpass ="";
+
+if(isset($_POST['sells_btn_reg'])){
+    $errors = array();
+    $cname = $_POST['cname'];
+    $pname = $_POST['select'];
+    $qty = $_POST['quantity'];
+    $cprice = $_POST['costname'];
+    $sprice = $_POST['sellprice'];
+    $staff = $_POST['staff'];
+}
+
+    if(empty($cname)){
+        $errors['cname'] = 'Customer name is required';
+    }
+    
+    if(empty($pname)){
+        $errors['pname'] = 'Product name is required';
+    }
+    
+    if(empty($qty)){
+        $errors['qty'] = 'please select quantity';
+    }
+    
+    if(empty($cprice)){
+        $errors['cprice'] = 'Cost price is required';
+    }
+    
+    if(empty($sprice)){
+        $errors['sprice'] = 'Sell price is required';
+    }
+    
+    if(empty($staff)){
+        $errors['sprice'] = 'Staff name is required';
+    }
+
+    if(count($errors) === 0){
+        $sql = "INSERT INTO sells(`customer_name`, `product_name`, `quantity`, `cost_price`, `Sell_price`, `staff_name`)VALUES(?,?,?,?,?,?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('ssssss', $cname, $pname, $qty, $cprice, $sprice, $staff);
+
+            if($stmt->execute()){
+                    echo "
+                    <script>
+                        // swal('Done', 'product Added Successfully', 'success')
+                        // .then(function(result){
+                        //     if(result){
+                        //         window.location='../admin/admin_dashboard.php'
+                        //     }});
+
+
+
+
+                        
+                        alert('Product Added Successfully')
+                        window.location='../admin/admin_dashboard.php';
+                    </script>
+                ";
+
+
+                }
+        }
+
+    
 
 
 
@@ -71,6 +141,7 @@
                     <div class="form-group mt-2">
                         <button type="submit" name="sells_btn_reg" class="btn btn-success mt-3 form-control">Proceed to sell</button>
                     </div>
+                    <a href="../admin/admin_dashboard.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
                 </form>
             </div>
         </div>
