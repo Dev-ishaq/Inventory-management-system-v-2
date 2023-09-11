@@ -24,8 +24,8 @@
               <li><a href="#" title="HOME"><i class="fa fa-home"></i><span>HOME</span></a></li>
               <!-- <li><a href="../admin/reg.php" title="ADD STAFF"><i class="fas fa-user-plus"></i><span>Add Staff</span></a></li> -->
               <!-- <li><a href="../admin/view_staff.php" title="VIEW STAFF"><i class="fa fa-eye"></i><span>View Staff</span></a></li> -->
-              <li><a href="../buy/buy_product.php" title="ADD PRODUCT"><i class="fa fa-shopping-bag"></i><span>Add Product</span></a></li>
-              <li><a href="../buy/view_product.php" title="VIEW PRODUCT"><i class="fa fa-eye"></i><span>View Product</span></a></li>
+              <li><a href="../buy/buy_product2.php" title="ADD PRODUCT"><i class="fa fa-shopping-bag"></i><span>Add Product</span></a></li>
+              <li><a href="../buy/view_product2.php" title="VIEW PRODUCT"><i class="fa fa-eye"></i><span>View Product</span></a></li>
               <li><a href="../sells/sell_product.php" title="SELL PRODUCT"><i class="fa fa-shopping-bag"></i><span>Sell Product</span></a></li>
               <li><a href="../sells/view_sold_product.php" title="VIEW SOLD PRODUCT"><i class="fa fa-eye"></i><span>manage</span></a></li>
               <li><a href="../hist/history.php" title="HISTORY"><i class="fa fa-history"></i><span>History</span></a></li>
@@ -39,11 +39,11 @@
               <li><a href="#"><i class="fa fa-home"></i> <span>HOME</span></a></li>
               <!-- <li><a href="../admin/reg.php"><i class="fas fa-user-plus"></i> <span>Add Staff</span></a></li>
               <li><a href="../admin/view_staff.php"><i class="fa fa-eye"></i> <span>View Staff</span></a></li> -->
-              <li><a href="../buy/buy_product.php"><i class="fa fa-shopping-bag"></i> <span>Add Product</span></a></li>
-              <li><a href="../buy/view_product.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
-              <li><a href="../sells/sell_product.php"><i class="fa fa-shopping-bag"></i> <span>Sell Product</span></a></li>
+              <li><a href="../buy/buy_product2.php"><i class="fa fa-shopping-bag"></i> <span>Add Product</span></a></li>
+              <li><a href="../buy/view_product2.php"><i class="fa fa-eye"></i> <span>View Product</span></a></li>
+              <li><a href="../sells/sell_product2.php"><i class="fa fa-shopping-bag"></i> <span>Sell Product</span></a></li>
               <li><a href="../sells/view_sold_product.php"><i class="fa fa-eye"></i> <span>manage</span></a></li>
-              <li><a href="../hist/history.php"><i class="fa fa-history"></i> <span>History</span></a></li>
+              <li><a href="../hist/history2.php"><i class="fa fa-history"></i> <span>History</span></a></li>
               <li><a href="../admin/landingpage.php"><i class="fa fa-backward"></i> <span>LogOut</span></a></li>
             </ul>
         </nav>
@@ -100,9 +100,9 @@
             <main>
                 <!-- <div class="card"><a href="../admin/reg.php">ADD STAFF</a></div> -->
                 <div class="card"><a href="../sells/manage_product2.php">MANAGE PRODUCT</a></div>
-                <div class="card"><a href="../sells/sell_product.php">SELL PRODUCT</a></div>
+                <div class="card"><a href="../sells/sell_product2.php">SELL PRODUCT</a></div>
                 <!-- <div class="card"><a href="../hist/manage_staff.php">MANAGE STAFF</a></div> -->
-                <div class="card"><a href="../hist/history.php">HISTORY</a></div>
+                <div class="card"><a href="../hist/history2.php">HISTORY</a></div>
             </main>
         </section>
     </div>

@@ -32,7 +32,7 @@
   <div class="container mt-5">
     <div class="table-responsive-sm mt-5 col-md-12">
         <a href="../staff/staff_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
-        <a href="../sells/sell_product2.php" class="text-right btn btn-success mt-5"><i class="fa fa-shopping-bag"></i> &nbsp;&nbsp;SELL PRODUCT</a>
+        <a href="../buy/buy_product2.php" class="text-right btn btn-success mt-5"><i class="fa fa-shopping-bag"></i> &nbsp;&nbsp;ADD PRODUCT</a>
         <div class="row">
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">
@@ -46,15 +46,15 @@
             <thead>
               <tr>
                 <th>S/NO</th>
-                <th>CUSTOMER NAME</th>
+                <th>BUYER NAME</th>
                 <th>PRODUCT NAME</th>
                 <th>QUANTITY</th>
                 <th>COST PRICE</th>
-                <th>SELL PRICE</th>
-                <th>Total Cost Price</th>
-                <th>PROFIT</th>
+                <!-- <th>SELL PRICE</th> -->
+                <!-- <th>Total Cost Price</th> -->
+                <!-- <th>PROFIT</th> -->
                 <th>TOTAL</th>
-                <th>STAFF NAME</th>
+                <!-- <th>STAFF NAME</th> -->
                 <th>DATE</th>
                 <th>ACTION</th>
               </tr>
@@ -64,7 +64,7 @@
                   // include "../actions/delete.php";
                    include "../config/server.php";  
                   $sn = 1;
-                  $sql = "SELECT * FROM sells ORDER BY id DESC";
+                  $sql = "SELECT * FROM buy ORDER BY id DESC";
                   $res = $conn->query($sql);
 
                   while($row = mysqli_fetch_assoc($res)): ?>
@@ -72,18 +72,19 @@
             <tbody>
               <tr>
                 <td><?= $sn++; ?></td>
-                <td><?= $row['customer_name']; ?></td>
+                <td><?= $row['buy_name']; ?></td>
                 <td><?= $row['product_name']; ?></td>
-                <td><?= $row['quantity']; ?></td>
+                <td><?= $row['qty']; ?></td>
                 <td><?= $row['cost_price']; ?></td>
-                <td><?= $row['Sell_price']; ?></td>
-                <td><?= $row['cost_price']*$row['quantity']; ?></td>
+                <td><?= $row['total']; ?></td>
+                <td><?= $row['date']; ?></td>
+                <!-- <td><?= $row['cost_price']*$row['quantity']; ?></td>
                 <td><?= ($row['Sell_price']*$row['quantity'])-($row['cost_price']*$row['quantity']);  ?></td>
                 <td><?= ($row['Sell_price']*$row['quantity']); ?></td>
                 <td><?= $row['staff_name']; ?></td>
-                <td><?= $row['date']; ?></td>
+                <td><?= $row['date']; ?></td> -->
                 <!-- <td><a href="../sells/sell_product.php?edit2=<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp; Edit</a></td> -->
-                <td><a href="../actions/delete.php?del2=<?= $row['id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp; Delete</a></td>
+                <td><a href="../actions/delete.php?del3=<?= $row['id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp; Delete</a></td>
               </tr>
             </tbody>
             <?php endwhile; ?>

@@ -1,4 +1,11 @@
 <?php
+
+    include "../config/server.php";
+
+
+
+?>
+<?php
   include "../config/server.php";  
 
 ?>
@@ -31,8 +38,8 @@
 <body>
   <div class="container mt-5">
     <div class="table-responsive-sm mt-5 col-md-12">
+        <!-- <a href="../sells/sell_product.php" class="text-right btn btn-success mt-5"><i class="fa fa-users"></i> &nbsp;&nbsp;ADD PRODUCT</a> -->
         <a href="../staff/staff_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
-        <a href="../sells/sell_product2.php" class="text-right btn btn-success mt-5"><i class="fa fa-shopping-bag"></i> &nbsp;&nbsp;SELL PRODUCT</a>
         <div class="row">
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">
@@ -56,7 +63,6 @@
                 <th>TOTAL</th>
                 <th>STAFF NAME</th>
                 <th>DATE</th>
-                <th>ACTION</th>
               </tr>
             </thead>
 
@@ -82,8 +88,6 @@
                 <td><?= ($row['Sell_price']*$row['quantity']); ?></td>
                 <td><?= $row['staff_name']; ?></td>
                 <td><?= $row['date']; ?></td>
-                <!-- <td><a href="../sells/sell_product.php?edit2=<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp; Edit</a></td> -->
-                <td><a href="../actions/delete.php?del2=<?= $row['id']; ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp; Delete</a></td>
               </tr>
             </tbody>
             <?php endwhile; ?>
