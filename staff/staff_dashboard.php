@@ -99,7 +99,7 @@
                       <!-- main cards section -->
             <main>
                 <!-- <div class="card"><a href="../admin/reg.php">ADD STAFF</a></div> -->
-                <div class="card"><a href="../sells/manage_product.php">MANAGE PRODUCT</a></div>
+                <div class="card"><a href="../sells/manage_product2.php">MANAGE PRODUCT</a></div>
                 <div class="card"><a href="../sells/sell_product.php">SELL PRODUCT</a></div>
                 <!-- <div class="card"><a href="../hist/manage_staff.php">MANAGE STAFF</a></div> -->
                 <div class="card"><a href="../hist/history.php">HISTORY</a></div>
