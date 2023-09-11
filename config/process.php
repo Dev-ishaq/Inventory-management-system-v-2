@@ -131,14 +131,15 @@ if(isset($_POST['reg'])){
 
             if(isset($_POST['buy_product-btn'])){
 
-                
+                $bname = $_POST['bname'];
+                $pname =$_POST['pname'];
+                $qty = $_POST['quantity'];
+                $cprice = $_POST['cprice'];
+                $total = $_POST['total'];
 
-
-
-
-                $sql = "INSERT INTO ims(`full_name`, `username`, `number`, `email`, `password`, `cpassword`)VALUES(?,?,?,?,?,?)";
+                $sql = "INSERT INTO buy(`buy_name`, `product_name`, `qty`, `cost_price`, `total`)VALUES(?,?,?,?,?)";
                 $stmt = $conn->prepare($sql);
-                $stmt->bind_param('ssssss', $fname, $uname, $no, $email, $pass, $cpass);
+                $stmt->bind_param('sssss', $bname, $pname, $qty, $cprice, $total);
         
                     if($stmt->execute()){
                             echo "

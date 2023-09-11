@@ -29,11 +29,11 @@
                     <h2 class="text-center text-success">COMPANY NAME</h2>
                     <div class="form-group mt-2">
                         <label for="customer">Buyer Name:</label>
-                        <input type="text" name="cname" value="" class="form-control" required>
+                        <input type="text" name="bname" value="" class="form-control" required>
                     </div>
                     <div class="form-group mt-2">
-                        <label for="fname">Products Name:</label>
-                        <select name="select" id="" class="form-control form-select">
+                        <label for="pname">Products Name:</label>
+                        <select name="pname" id="" class="form-control form-select">
                             <option value="select"></option>
                             <option value="fanta">Fanta</option>
                             <option value="coaca_cola">Coaca cola</option>
@@ -53,8 +53,8 @@
                         <input type="number" name="quantity" value="" class="form-control" required>
                     </div>
                     <div class="form-group mt-2">
-                        <label for="uname">Cost Price:</label>
-                        <input type="text" name="uname" value="" class="form-control" required>
+                        <label for="cprice">Cost Price:</label>
+                        <input type="text" name="cprice" value="" class="form-control" required>
                     </div>
                     <div class="form-group mt-2">
                         <label for="number">Total:</label>
