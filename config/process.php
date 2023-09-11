@@ -131,6 +131,7 @@ if(isset($_POST['reg'])){
 
             if(isset($_POST['buy_product-btn'])){
 
+                
 
 
 
