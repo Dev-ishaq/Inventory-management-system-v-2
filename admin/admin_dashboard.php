@@ -32,6 +32,8 @@
               <li><a href="../admin/landingpage.php" title="LOGOUT"><i class="fa fa-backward"></i><span>LogOut</span></a></li>
             </ul>
         </nav>
+
+        
                           <!-- DASHBOARD WITH ICONS -->
         <nav class="nav-display">
             <h1><i class="fa fa-tachometer"></i> DASHBOARD</h1>
