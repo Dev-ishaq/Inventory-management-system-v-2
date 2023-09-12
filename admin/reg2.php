@@ -95,7 +95,7 @@ include "../actions/edit.php";
                         <?php else :?>
                             <button type="submit" name="reg" class="btn btn-success mt-3 form-control">Register</button>
                             <?php endif; ?>
-                            <a href="../admin/admin_dashboard.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
+                            <a href="../admin/manage_staff.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
                             <span>
                                 <!-- <a href="../admin/manage_staff.php" class="text-right btn btn-success mt-2">previous  &nbsp;<i class="fa fa-forward"></i></a> -->
                             </span>

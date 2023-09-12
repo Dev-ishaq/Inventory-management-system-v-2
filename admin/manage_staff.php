@@ -32,7 +32,7 @@
   <div class="container mt-5">
     <div class="table-responsive-sm mt-5 col-md-12">
         <a href="../admin/admin_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
-        <a href="../admin/reg.php" class="text-right btn btn-success mt-5"><i class="fa fa-users"></i> &nbsp;&nbsp;ADD STAFF</a>
+        <a href="../admin/reg2.php" class="text-right btn btn-success mt-5"><i class="fa fa-users"></i> &nbsp;&nbsp;ADD STAFF</a>
         <div class="row">
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">
