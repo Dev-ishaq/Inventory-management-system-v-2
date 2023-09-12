@@ -65,7 +65,7 @@
                         <button type="submit" name="buy_product-btn" class="btn btn-success mt-3 form-control">BUY</button>
                     </div>
                     <span>
-                    <a href="../staff/staff_dashboard.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
+                    <a href="../buy/view_product2.php" class="btn btn-success mt-2"><i class="fa fa-backward"></i> &nbsp;Back</a>
                     </span>
                     <span>
                     <!-- <a href="../sells/manage_product2.php" class="text-right btn btn-success mt-2">previous  &nbsp;<i class="fa fa-forward"></i></a> -->
