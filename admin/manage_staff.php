@@ -25,6 +25,9 @@
         table{
           width: 100%;
         }
+        body {
+            height: auto;
+        }
     </style>
 <body>
 </head>

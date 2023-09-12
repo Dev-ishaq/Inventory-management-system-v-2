@@ -154,7 +154,7 @@ if(isset($_POST['reg'])){
 
 
                                 
-                                alert('Registered successfully')
+                                alert('Product Added successfully')
                                 window.location='../admin/admin_dashboard.php';
                             </script>
                         ";

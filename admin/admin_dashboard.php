@@ -119,6 +119,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
         </div>
       </section>
+      <!-- <a href="#about">Back to top</a> -->
       <footer>
         <p>Copyright&copy;2023 <span>All right reserves.</span></p>
         <!-- <p></p> -->
@@ -126,6 +127,9 @@
         <a href="" class="fab fa-whatsapp"></a>
         <a href="" class="fab fa-youtube"></a>
         <a href="" class="fab fa-twitter"></a>
+        <span>
+          <p><i>POWERED BY DEV-ISHAQ TECH</i></p>
+        </span>
       </footer>
     </div>
 

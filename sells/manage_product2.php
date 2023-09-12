@@ -32,7 +32,7 @@
   <div class="container mt-5">
     <div class="table-responsive-sm mt-5 col-md-12">
         <a href="../staff/staff_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
-        <a href="../sells/sell_product2.php" class="text-right btn btn-success mt-5"><i class="fa fa-shopping-bag"></i> &nbsp;&nbsp;SELL PRODUCT</a>
+        <a href="../sells/sell_products2.php" class="text-right btn btn-success mt-5"><i class="fa fa-shopping-bag"></i> &nbsp;&nbsp;SELL PRODUCT</a>
         <div class="row">
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">

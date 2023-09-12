@@ -37,6 +37,9 @@ include "../actions/edit.php";
         /* background-color: aqua; */
         width: 100%;
         }
+        body {
+            height: auto;
+        }
     </style>
 </head>
 <body>
