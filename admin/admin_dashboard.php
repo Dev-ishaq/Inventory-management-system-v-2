@@ -59,7 +59,7 @@
                         <i class="fa fa-caret-down"></i>
                       </button>
                       <div class="dropdown-content">
-                        <a href="../staff/staff_dashboard.php">STAFFS</a>
+                        <!-- <a href="../staff/staff_dashboard.php">STAFFS</a> -->
                         <a href="#">ADMINS</a>
                         <!-- <a href="#">BLOG</a> -->
                       </div>
@@ -82,7 +82,7 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="../staff/staff_dashboard.php">STAFFS</a>
+                  <!-- <a href="../staff/staff_dashboard.php">STAFFS</a> -->
                   <a href="#">ADMINS</a>
                   <!-- <a href="#">BLOG</a> -->
                   <a href="../admin/landingpage.php">LOGOUT</a>
