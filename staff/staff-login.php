@@ -3,15 +3,15 @@
 include "../config/server.php";
     
 if(isset($_POST['btn_staff_login'])){
-    $email = $_POST['email'];
+    $uname = $_POST['uname'];
     $pass = $_POST['password'];
 
-    $sql = "SELECT * FROM ims WHERE email = '$email' AND `password` = '$pass'";
+    $sql = "SELECT * FROM ims WHERE `email` = '$uname' AND `password` = '$pass'";
     $ask = $conn->query($sql);
     if(mysql_num_rows($ask) > 0){
         session_start();
-        $_SESSION['email'] = $email;
-        header("Location: ./staff_dashboard.php");
+        $_SESSION['email'] = $uname;
+        header("Location: staff_dashboard.php");
     }else{
         echo "<script>
                 alert(invalid email/password);
@@ -48,7 +48,7 @@ if(isset($_POST['btn_staff_login'])){
                     <h2 class="text-center text-success"><b>Staff Login</b></h2>
                     <div class="form-group">
                         <label for="uname">Enter your email:</label>
-                        <input type="text" name="email" value="" class="form-control" required>
+                        <input type="text" name="uname" value="" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="password">Password:</label>

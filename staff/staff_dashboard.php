@@ -1,5 +1,13 @@
 <?php
 
+session_start();
+  include "../config/server.php"; 
+  if(!$_SESSION['email']){
+    header("Location: staff-login.php");
+    exit();
+  }
+  
+
 
 ?>
 
@@ -20,6 +28,18 @@
     </style>
 </head>
 <body>
+  <?php
+// if(isset($_SESSION)){
+    // $email = $_SESSION['email'];
+    // $sql = "SELECT * FROM ims WHERE email='$email'";
+    // $result = ($conn->query($sql));
+    // $row = mysqli_fetch_assoc($result);
+    // $lname = $row['lastName'];
+    // $fname = $row['firstName'];
+    // $fullName = 'welcome'.$fname;
+        // echo $fullName;
+// }
+// ?>
     <div class="container">
                                 <!-- DASHBOARD ONLY ICONS -->
         <nav class="nav-display-none">

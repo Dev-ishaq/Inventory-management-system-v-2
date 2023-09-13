@@ -4,7 +4,7 @@
 
     session_destroy();
 
-    header("Location: ./staff-login.php?logout=success");
+    header("Location: staff-login.php?logout=success");
 
 
 
