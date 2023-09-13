@@ -20,6 +20,103 @@ include "../actions/edit.php";
         $cpass = $output['cpassword'];
     }
 
+
+
+    
+
+    include "../config/server.php";
+    include "../config/process.php";
+    
+$errors = array();
+$fname = "";
+$uname = "";
+$no = "";
+$email = "";
+$pass = "";
+$cpass ="";
+
+if(isset($_POST['reg_admin'])){
+    $errors = array();
+    $fname = $_POST['fname'];
+    $uname = $_POST['uname'];
+    $no = $_POST['number'];
+    $email = $_POST['email'];
+    $pass = $_POST['password'];
+    $cpass = $_POST['cpassword'];
+
+    if(empty($fname)){
+        $errors['fname'] = 'Full Name is required';
+    }
+    
+    if(empty($uname)){
+        $errors['uname'] = 'Username Name is required';
+    }
+    
+    if(empty($no)){
+        $errors['number'] = 'Number is required';
+    }
+    
+    if(empty($email)){
+        $errors['email'] = 'Email is required';
+    }
+    
+    if(empty($pass)){
+        $errors['password'] = 'Password is required';
+    }
+    
+    if(empty($cpass)){
+        $errors['password'] = 'Confirm password is required';
+    }
+
+    if($pass != $cpass){
+        $errors['mismatch'] = 'The two password mismatched';
+    }
+
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $errors['validate'] = 'Email Address is invalid';
+    }
+
+    $sql = "SELECT * FROM ims WHERE `username`=? OR `number`=? OR `email`=?";
+
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('sss', $uname, $no, $email);
+        $stmt->execute();
+
+            $res = $stmt->get_result();
+            $rowCount = $res->num_rows;
+
+            if($rowCount>0){
+                $errors['exist'] = 'User already already exist';
+            }
+            if(count($errors) === 0){
+                $sql = "INSERT INTO ims(`full_name`, `username`, `number`, `email`, `password`, `cpassword`)VALUES(?,?,?,?,?,?)";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param('ssssss', $fname, $uname, $no, $email, $pass, $cpass);
+        
+                    if($stmt->execute()){
+                            echo "
+                            <script>
+                                // swal('Done', 'Staff Added Successfully', 'success')
+                                // .then(function(result){
+                                //     if(result){
+                                //         window.location='../admin/admin_dashboard.php'
+                                //     }});
+
+
+
+
+                                
+                                alert('Registered successfully')
+                                window.location='../admin/admin_dashboard.php';
+                            </script>
+                        ";
+
+
+                        }
+                }
+
+            }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
