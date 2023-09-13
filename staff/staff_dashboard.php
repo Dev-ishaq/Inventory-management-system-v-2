@@ -68,7 +68,7 @@ session_start();
               <li><a href="../sells/sell_product2.php"><i class="fa fa-shopping-bag"></i> <span>Sell Product</span></a></li>
               <li><a href="../sells/manage_product2.php"><i class="fa fa-eye"></i> <span>manage</span></a></li>
               <li><a href="../hist/history2.php"><i class="fa fa-history"></i> <span>History</span></a></li>
-              <li><a href="../admin/landingpage.php"><i class="fa fa-backward"></i> <span>LogOut</span></a></li>
+              <li><a href="logout.php"><i class="fa fa-backward"></i> <span>LogOut</span></a></li>
             </ul>
         </nav>
         <section>

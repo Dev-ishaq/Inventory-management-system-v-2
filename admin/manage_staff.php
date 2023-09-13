@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
-    <link rel="stylesheet" href="../css/sweetalert/dist/sweetalert.min.js">
+    <script src="../css/sweetalert/dist/sweetalert.min.js"></script>
     <style>
         .table-responsive-sm{
           /* padding: -10px; */
