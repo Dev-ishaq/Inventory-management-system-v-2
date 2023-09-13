@@ -39,6 +39,9 @@
         /* background-color: aqua; */
         width: 100%;
         }
+        body {
+            height: 100vh;
+        }
 </style>
 </head>
 <body>
