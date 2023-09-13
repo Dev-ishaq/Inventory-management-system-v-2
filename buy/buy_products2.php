@@ -19,6 +19,9 @@
         .row {
             width: auto;
         }
+        body {
+            height: auto;
+        }
     </style>
 </head>
 <body>

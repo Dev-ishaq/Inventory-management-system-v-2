@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row {
-            width: auto;
+            width: 100%;
+        }
+        body {
+            height: auto;
         }
     </style>
 </head>

@@ -26,7 +26,7 @@
           width: 100%;
         }
         body {
-          width: auto;
+          height: auto;
         }
     </style>
 <body>

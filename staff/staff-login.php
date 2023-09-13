@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="container">

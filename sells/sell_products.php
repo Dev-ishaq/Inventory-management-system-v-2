@@ -91,6 +91,9 @@ if(isset($_POST['sells_btn_reg'])){
         .row{
         width: 100%;
         }
+        body {
+            height: auto;
+        }
     </style>
 </head>
 <body>

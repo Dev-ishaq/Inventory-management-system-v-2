@@ -92,6 +92,9 @@ if(isset($_POST['sells_btn_reg'])){
         /* background-color: aqua; */
         width: 100%;
         }
+        body {
+            height: auto;
+        }
     </style>
 </head>
 <body>
