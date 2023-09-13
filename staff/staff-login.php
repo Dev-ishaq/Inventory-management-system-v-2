@@ -6,11 +6,11 @@ if(isset($_POST['btn_staff_login'])){
     $uname = $_POST['uname'];
     $pass = $_POST['password'];
 
-    $sql = "SELECT * FROM ims WHERE `email` = '$uname' AND `password` = '$pass'";
+    $sql = "SELECT * FROM ims WHERE `email`='$uname' AND `password`='$pass'";
     $ask = $conn->query($sql);
-    if(mysql_num_rows($ask) > 0){
+    if(mysqli_num_rows($ask) > 0){
         session_start();
-        $_SESSION['email'] = $uname;
+        $_SESSION['email']=$uname;
         header("Location: staff_dashboard.php");
     }else{
         echo "<script>
