@@ -60,7 +60,7 @@
                       </button>
                       <div class="dropdown-content">
                         <!-- <a href="../staff/staff_dashboard.php">STAFFS</a> -->
-                        <a href="#">ADMINS</a>
+                        <a href="reg_admin.php">ADD ADMINS</a>
                         <!-- <a href="#">BLOG</a> -->
                       </div>
                     </div> 
@@ -83,7 +83,7 @@
                 </button>
                 <div class="dropdown-content">
                   <!-- <a href="../staff/staff_dashboard.php">STAFFS</a> -->
-                  <a href="#">ADMINS</a>
+                  <a href="reg_admin.php">ADD ADMINS</a>
                   <!-- <a href="#">BLOG</a> -->
                   <a href="../admin/landingpage.php">LOGOUT</a>
                 </div>

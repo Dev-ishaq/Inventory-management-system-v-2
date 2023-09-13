@@ -21,6 +21,7 @@ session_start();
     <!-- <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
+    <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <style>
       body {
         height: auto;
@@ -28,6 +29,20 @@ session_start();
     </style>
 </head>
 <body>
+  <script>
+                            //   ALERT IN SECONDS
+//     const Toast = Swal.mixin({
+//     toast: true,
+//     position: 'top-end',
+//     showConfirmButton: false,
+//     timer: 3000,
+//     timerProgressBar: true,
+//     didOpen: (toast) => {
+//         toast.addEventListener('mouseenter', Swal.stopTimer)
+//         toast.addEventListener('mouseleave', Swal.resumeTimer)
+//   }
+// })
+//   </script>
   <?php
 // if(isset($_SESSION)){
     // $email = $_SESSION['email'];
@@ -53,7 +68,7 @@ session_start();
               <li><a href="../sells/sell_product.php" title="SELL PRODUCT"><i class="fa fa-shopping-bag"></i><span>Sell Product</span></a></li>
               <li><a href="../sells/view_sold_product.php" title="VIEW SOLD PRODUCT"><i class="fa fa-eye"></i><span>manage</span></a></li>
               <li><a href="../hist/history.php" title="HISTORY"><i class="fa fa-history"></i><span>History</span></a></li>
-              <li><a href="../admin/landingpage.php" title="LOGOUT"><i class="fa fa-backward"></i><span>LogOut</span></a></li>
+              <li><a href="logout.php" title="LOGOUT"><i class="fa fa-backward"></i><span>LogOut</span></a></li>
             </ul>
         </nav>
                           <!-- DASHBOARD WITH ICONS -->
@@ -76,7 +91,7 @@ session_start();
                     <!-- Header section -->
             <header>
                 <div class="navbar">
-                <a href="../admin/admin_dashboard.php" class="btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
+                <!-- <a href="../admin/admin_dashboard.php" class="btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a> -->
 
                     <a href="#about">ABOUT</a>
                     <!-- <a href="#news">NEWS</a> -->
@@ -88,7 +103,7 @@ session_start();
                         <!-- <a href="staff_dashboard.html">STAFFS</a> -->
                         <!-- <a href="#">ADMINS</a> -->
                         <!-- <a href="#">BLOG</a> -->
-                        <a href="landingpage.html">LOGOUT</a>
+                        <a href="logout.php">LOGOUT</a>
                       </div>
                     </div> 
                   </div>
@@ -111,7 +126,7 @@ session_start();
                   <!-- <a href="staff_dashboard.html">STAFFS</a> -->
                   <!-- <a href="#">ADMINS</a> -->
                   <!-- <a href="#">BLOG</a> -->
-                  <a href="landingpage.html">LOGOUT</a>
+                  <a href="logout.php">LOGOUT</a>
                 </div>
               </div> 
             </div>
