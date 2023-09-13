@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         body {
-            height: auto;
+            height: 100vh;
         }
     </style>
 </head>

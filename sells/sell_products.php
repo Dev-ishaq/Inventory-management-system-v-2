@@ -92,7 +92,7 @@ if(isset($_POST['sells_btn_reg'])){
         width: 100%;
         }
         body {
-            height: auto;
+            height: 100vh;
         }
     </style>
 </head>
