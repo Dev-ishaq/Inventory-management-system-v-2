@@ -1,5 +1,11 @@
 <?php
-  include "../config/server.php";  
+session_start();
+  include "../config/server.php"; 
+  if(!$_SESSION['email']){
+    header("Location: ./staff-login.php");
+    exit();
+  }
+  
 
 ?>
 

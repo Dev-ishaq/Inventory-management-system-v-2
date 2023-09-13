@@ -1,28 +1,16 @@
 <?php
  
     include "../config/server.php";
-
-    $errors = array();
-    $uname = "";
-    $pass = "";
-
+    
     if(isset($_POST['btn_admin_login'])){
-        $errors = array();
-        $uname = $_POST['uname'];
-        $pass = $_POST['password'];  
-        
-        
-        if(empty($uname)){
-            $errors['uname'] = 'Username is required';
-        }
-        if(empty($pass)){
-            $errors['password'] = 'Password is required';
-        }
+        $fanme = $_POST['uname'];
+        $pass = $_POST['password'];
 
-        if(count($errors) === 0){
-            header('Location: ../admin/admin_dashboard.php');
-        }
+        $sql = "SELECT * FROM ";
     }
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,21 +38,16 @@
             <div class="col-md-6 offset-md-3 mt-5">
                 <form action="../admin/admin_dashboard.php" method="POST">
                     <h2 class="text-center text-success">Admin Login</h2>
-                    <?php
-                    if(count($errors)>0): ?>
-                    <div class="alert alert-danger">
-                        <?php foreach($errors as $err): ?>
-                        <li><?php echo $err; ?></li>
-                        <?php endforeach; ?>
-                    </div>
-                    <?php endif; ?>
+                        <!-- <div class="alert alert-danger">
+                            <li></li>
+                        </div> -->
                     <div class="form-group">
                         <label for="uname">Username:</label>
-                        <input type="text" name="uname" value="<?= $uname; ?>" class="form-control">
+                        <input type="text" name="uname" value="" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="password">Password:</label>
-                        <input type="password" name="password" value="<?= $pass; ?>" class="form-control">
+                        <input type="password" name="password" value="" class="form-control">
                     </div>
                     <div class="form-group">
                         <!-- <a href="admin_dashboard.html" class="btn btn-success mt-3 form-control">Login</a> -->
