@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row {
-            width: 100%;
+            width: auto;
         }
     </style>
 </head>
