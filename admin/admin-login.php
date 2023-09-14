@@ -3,10 +3,22 @@
     include "../config/server.php";
     
     if(isset($_POST['btn_admin_login'])){
-        $fanme = $_POST['uname'];
+        $uanme = $_POST['uname'];
         $pass = $_POST['password'];
 
-        $sql = "SELECT * FROM ";
+        $sql = "SELECT * FROM admins WHERE `email` = '$uanme' AND `password` = '$pass'";
+        $ask = $conn->query($sql);
+        if(mysqli_num_rows($ask)>0){
+            session_start();
+            $_SESSION['email']=$uanme;
+            header("Location: admin_dashboard.php");
+        }else{
+            echo "
+                <script>
+                    alert('Incorrect, invalid email/password');
+                </script>
+            ";
+        }
     }
 
 
@@ -36,13 +48,13 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-6 offset-md-3 mt-5">
-                <form action="../admin/admin_dashboard.php" method="POST">
+                <form action="#" method="POST">
                     <h2 class="text-center text-success">Admin Login</h2>
                         <!-- <div class="alert alert-danger">
                             <li></li>
                         </div> -->
                     <div class="form-group">
-                        <label for="uname">Username:</label>
+                        <label for="uname">Enter your email:</label>
                         <input type="text" name="uname" value="" class="form-control">
                     </div>
                     <div class="form-group">

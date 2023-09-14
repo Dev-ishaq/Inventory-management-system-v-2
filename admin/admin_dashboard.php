@@ -1,5 +1,10 @@
 <?php
-  include "../config/server.php";  
+session_start();
+  include "../config/server.php";
+  if(!$_SESSION){
+    header("Location: admin-login.php");
+    exit();
+  }  
 
 ?>
 
@@ -64,7 +69,7 @@
                         <!-- <a href="#">BLOG</a> -->
                       </div>
                     </div> 
-                    <a href="../admin/landingpage.php">LOGOUT</a>
+                    <a href="logout.php">LOGOUT</a>
                   </div>
             </header>
             <!-- <div class="mark1" id="mark-second">
@@ -85,7 +90,7 @@
                   <!-- <a href="../staff/staff_dashboard.php">STAFFS</a> -->
                   <a href="reg_admin.php">ADD ADMINS</a>
                   <!-- <a href="#">BLOG</a> -->
-                  <a href="../admin/landingpage.php">LOGOUT</a>
+                  <a href="logout.php.php">LOGOUT</a>
                 </div>
               </div> 
             </div>
