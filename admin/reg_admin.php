@@ -1,6 +1,6 @@
 <?php
 include "../config/server.php";
-include "../config/process.php";
+// include "../config/process.php";
 
     $fname = "";
     $uname = "";
@@ -25,7 +25,7 @@ include "../actions/edit.php";
     
 
     include "../config/server.php";
-    include "../config/process.php";
+    // include "../config/process.php";
     
 $errors = array();
 $fname = "";
@@ -76,7 +76,7 @@ if(isset($_POST['reg_admin'])){
         $errors['validate'] = 'Email Address is invalid';
     }
 
-    $sql = "SELECT * FROM ims WHERE `username`=? OR `number`=? OR `email`=?";
+    $sql = "SELECT * FROM admins WHERE `username`=? OR `number`=? OR `email`=?";
 
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('sss', $uname, $no, $email);
@@ -89,7 +89,7 @@ if(isset($_POST['reg_admin'])){
                 $errors['exist'] = 'User already already exist';
             }
             if(count($errors) === 0){
-                $sql = "INSERT INTO ims(`full_name`, `username`, `number`, `email`, `password`, `cpassword`)VALUES(?,?,?,?,?,?)";
+                $sql = "INSERT INTO admins(`full_name`, `username`, `number`, `email`, `password`, `cpassword`)VALUES(?,?,?,?,?,?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->bind_param('ssssss', $fname, $uname, $no, $email, $pass, $cpass);
         
@@ -127,7 +127,6 @@ if(isset($_POST['reg_admin'])){
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../css/sweetalert/dist/sweetalert.min.js">
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row{
