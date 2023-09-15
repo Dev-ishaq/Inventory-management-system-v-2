@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <style>
-        body {
+        *{
+            margin: 0; 
+            padding: 0;
+        }
+        .container {
             height: 100vh;
         }
         .row {
