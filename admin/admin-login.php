@@ -1,4 +1,23 @@
+<?php
+    include "../config/server.php";
 
+        $errors = array();
+        $email = "";
+        $pass = "";
+
+        if(isset($_POST['btn_admin_login'])){
+            $errors = array();
+            $email = $_POST['uname'];
+            $pass = $_POST['password'];
+
+            if(empty($mail)){
+                $errors['email']='Please enter your email first and password<b></b>';
+            }
+        }
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +45,13 @@
             <div class="col-md-6 offset-md-3 mt-5">
                 <form action="#" method="POST">
                     <h2 class="text-center text-success">Admin Login</h2>
-                        <!-- <div class="alert alert-danger">
-                            <li></li>
-                        </div> -->
+                    <?php if(count($errors)): ?>
+                        <div class="alert alert-danger">
+                            <?php foreach($errors as $err):?>
+                            <li><?= $err; ?></li>
+                            <?php endforeach; ?>
+                        </div>
+                        <?php endif; ?>
                     <div class="form-group">
                         <label for="uname">Enter your email:</label>
                         <input type="text" name="uname" value="" class="form-control">
@@ -70,10 +93,6 @@
                 }});
           </script>";
             // header("Location: admin_dashboard.php");
-        }else{
-            echo "<script>
-            swal.fire('Incorrect', 'Invalid email/password', 'error');
-          </script>";
         }
     }
 

@@ -1,7 +1,18 @@
 <?php
-include "../config/sever.php";
+// include "../config/sever.php";
+$errors = array();
+$email = "";
+$pass = "";
 
+if(isset($_POST['btn_staff_login'])){
+    $errors = array();
+    $email = $_POST['uname'];
+    $pass = $_POST['password'];
 
+    if(empty($email)){
+        $errors['email'] = 'Please enter your email first and password<b>!</b>';
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -36,6 +47,15 @@ include "../config/sever.php";
                 
                 <form action="#" method="POST">
                     <h2 class="text-center text-success"><b>Staff Login</b></h2>
+                    <?php 
+                    include "../config/server.php"; 
+                    if(count($errors)):?>
+                    <div class="alert alert-danger">
+                        <?php foreach($errors as $err):?>
+                        <li><?= $err; ?></li>
+                        <?php endforeach; ?>
+                    </div>
+                    <?php endif; ?>
                     <div class="form-group">
                         <label for="uname">Enter your email:</label>
                         <input type="text" name="uname" value="" class="form-control">
@@ -77,10 +97,10 @@ if(isset($_POST['btn_staff_login'])){
                         window.location='staff_dashboard.php';
                 }})
               </script>";
-    }else{
-        echo "<script>
-                swal.fire('Incorrect', 'Invalid email/password', 'error');
-              </script>";
+    // }else{
+    //     echo "<script>
+    //             swal.fire('Incorrect', 'Invalid email/password', 'error');
+    //           </script>";
     }
 }
 
