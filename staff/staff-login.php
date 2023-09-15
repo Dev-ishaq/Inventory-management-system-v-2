@@ -1,4 +1,9 @@
+<?php
+include "../config/sever.php";
 
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
