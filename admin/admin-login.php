@@ -64,8 +64,10 @@
             $_SESSION['email']=$uanme;
             echo "<script>
             swal.fire('Done', 'Login Successfull..', 'success')
-            .then(function(result){if(result){window.location='admin_dashboard.php'}});
-            // window.location = 'admin_dashboard.php';
+            .then(function(result){
+                if(result){
+                    window.location='admin_dashboard.php'
+                }});
           </script>";
             // header("Location: admin_dashboard.php");
         }else{
