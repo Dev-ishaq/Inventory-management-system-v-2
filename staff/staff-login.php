@@ -64,7 +64,14 @@ if(isset($_POST['btn_staff_login'])){
     if(mysqli_num_rows($ask) > 0){
         session_start();
         $_SESSION['email']=$uname;
-        header("Location: staff_dashboard.php");
+        // header("Location: staff_dashboard.php");
+        echo "<script>
+                swal.fire('Done', 'Login Successfull..', 'success')
+                .then(function (result){
+                    if(result){
+                        window.location='staff_dashboard.php';
+                }})
+              </script>";
     }else{
         echo "<script>
                 swal.fire('Incorrect', 'Invalid email/password', 'error');
