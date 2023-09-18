@@ -4,7 +4,8 @@ session_start();
   if(!$_SESSION){
     header("Location: admin-login.php");
     exit();
-  }  
+  }
+  
 
 ?>
 

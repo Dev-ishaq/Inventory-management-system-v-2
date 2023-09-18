@@ -1,5 +1,6 @@
 <?php
 
+
         include "../config/server.php";
         //first delete
         if(isset($_GET['del'])){

@@ -8,6 +8,6 @@
 
     header("Location: landingpage.php?logout=success");
 
-
+ 
 
 ?>
