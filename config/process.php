@@ -139,8 +139,8 @@ if(isset($_POST['reg'])){
                             if(result){
                              window.location=' ../admin/manage_staff.php'
                         }});
-                    //     </script>
-                    // ";
+                        </script>
+                    ";
                 }else{
                     // die(mysqli_error($stmt));
                     echo "failed to update";
@@ -200,18 +200,18 @@ if(isset($_POST['reg'])){
                     if($stmt->execute()){
                             echo "
                             <script>
-                                // swal('Done', 'Staff Added Successfully', 'success')
-                                // .then(function(result){
-                                //     if(result){
-                                //         window.location='../admin/admin_dashboard.php'
-                                //     }});
+                                swal('Done', 'Staff Added Successfully', 'success')
+                                .then(function(result){
+                                    if(result){
+                                        window.location='../admin/admin_dashboard.php'
+                                    }});
 
 
 
 
                                 
-                                alert('Product Added successfully')
-                                window.location='../admin/admin_dashboard.php';
+                                // alert('Product Added successfully')
+                                // window.location='../admin/admin_dashboard.php';
                             </script>
                         ";
 
