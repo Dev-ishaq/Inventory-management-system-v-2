@@ -1,81 +1,3 @@
-<?php
-
-
-   include "../config/server.php";
-   $errors = array();
-$fname = "";
-$uname = "";
-$no = "";
-$email = "";
-$pass = "";
-$cpass ="";
-
-if(isset($_POST['sells_btn_reg'])){
-    $errors = array();
-    $cname = $_POST['cname'];
-    $pname = $_POST['select'];
-    $qty = $_POST['quantity'];
-    $cprice = $_POST['costname'];
-    $sprice = $_POST['sellprice'];
-    $staff = $_POST['staff'];
-}
-
-    if(empty($cname)){
-        $errors['cname'] = 'Customer name is required';
-    }
-    
-    if(empty($pname)){
-        $errors['pname'] = 'Product name is required';
-    }
-    
-    if(empty($qty)){
-        $errors['qty'] = 'please select quantity';
-    }
-    
-    if(empty($cprice)){
-        $errors['cprice'] = 'Cost price is required';
-    }
-    
-    if(empty($sprice)){
-        $errors['sprice'] = 'Sell price is required';
-    }
-    
-    if(empty($staff)){
-        $errors['sprice'] = 'Staff name is required';
-    }
-
-    if(count($errors) === 0){
-        $sql = "INSERT INTO sells(`customer_name`, `product_name`, `quantity`, `cost_price`, `Sell_price`, `staff_name`)VALUES(?,?,?,?,?,?)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param('ssssss', $cname, $pname, $qty, $cprice, $sprice, $staff);
-
-            if($stmt->execute()){
-                    echo "
-                    <script>
-                        // swal('Done', 'product Added Successfully', 'success')
-                        // .then(function(result){
-                        //     if(result){
-                        //         window.location='../admin/admin_dashboard.php'
-                        //     }});
-
-
-
-
-                        
-                        alert('Product Added Successfully')
-                        window.location='../admin/admin_dashboard.php';
-                    </script>
-                ";
-
-
-                }
-        }
-
-    
-
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -86,13 +8,15 @@ if(isset($_POST['sells_btn_reg'])){
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
+    <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    
     <style>
         .row{
         /* background-color: aqua; */
         width: 100%;
         }
-        body {
+        .container {
             height: 100vh;
         }
     </style>
@@ -156,3 +80,83 @@ if(isset($_POST['sells_btn_reg'])){
     </div>
 </body>
 </html>
+
+
+<?php
+
+
+   include "../config/server.php";
+   $errors = array();
+$fname = "";
+$uname = "";
+$no = "";
+$email = "";
+$pass = "";
+$cpass ="";
+
+if(isset($_POST['sells_btn_reg'])){
+    $errors = array();
+    $cname = $_POST['cname'];
+    $pname = $_POST['select'];
+    $qty = $_POST['quantity'];
+    $cprice = $_POST['costname'];
+    $sprice = $_POST['sellprice'];
+    $staff = $_POST['staff'];
+}
+
+    if(empty($cname)){
+        $errors['cname'] = 'Customer name is required';
+    }
+    
+    if(empty($pname)){
+        $errors['pname'] = 'Product name is required';
+    }
+    
+    if(empty($qty)){
+        $errors['qty'] = 'please select quantity';
+    }
+    
+    if(empty($cprice)){
+        $errors['cprice'] = 'Cost price is required';
+    }
+    
+    if(empty($sprice)){
+        $errors['sprice'] = 'Sell price is required';
+    }
+    
+    if(empty($staff)){
+        $errors['sprice'] = 'Staff name is required';
+    }
+
+    if(count($errors) === 0){
+        $sql = "INSERT INTO sells(`customer_name`, `product_name`, `quantity`, `cost_price`, `Sell_price`, `staff_name`)VALUES(?,?,?,?,?,?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param('ssssss', $cname, $pname, $qty, $cprice, $sprice, $staff);
+
+            if($stmt->execute()){
+                    echo "
+                    <script>
+                        swal.fire('Done', 'product Added Successfully', 'success')
+                        .then(function(result){
+                            if(result){
+                                window.location='../admin/admin_dashboard.php'
+                            }});
+
+
+
+
+                        
+                        // alert('Product Added Successfully')
+                        // window.location='../admin/admin_dashboard.php';
+                    </script>
+                ";
+
+
+                }
+        }
+
+    
+
+
+
+?>

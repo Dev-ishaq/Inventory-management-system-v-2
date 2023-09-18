@@ -18,7 +18,9 @@ session_start();
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css"></head>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
 <body>
 </head>
 <body>

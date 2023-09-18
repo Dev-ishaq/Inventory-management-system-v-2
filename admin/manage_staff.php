@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
-    <script src="../css/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="../css/JQ.js"></script>
     <style>
         .table-responsive-sm{
@@ -93,6 +93,21 @@
 
 
    <script>
+
+const Toast = Swal.fire({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+        // swal.fire('done', 'Welcome Back', 'success')
+  }
+});
+
+
       $(document).ready(function(e){
         e.preventDefault;
         // alert("hello");
