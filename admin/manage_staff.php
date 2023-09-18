@@ -28,8 +28,8 @@
         table{
           width: 100%;
         }
-        body {
-            height: auto;
+        .container {
+            height: 100%;
         }
     </style>
 <body>
@@ -108,7 +108,7 @@
             }
           })
         })
-      })
+      });
    </script>
 </body>
 </html>
