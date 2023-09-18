@@ -134,10 +134,10 @@ if(isset($_POST['reg'])){
                     // header("Location: ../admin/manage_staff.php");
                     echo "
                         <script>
-                    swal.fire('Done', 'Staff Added Successfully', 'success')
-                    .then(function(result){
-                        if(result){
-                            window.location='../admin/admin_dashboard.php'
+                            swal.fire('Done', 'Staff Added Successfully', 'success')
+                            .then(function(result){
+                            if(result){
+                             window.location=' ../admin/manage_staff.php'
                         }});
                     //     </script>
                     // ";
