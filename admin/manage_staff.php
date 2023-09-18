@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
     <script src="../css/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../css/JQ.js"></script>
     <style>
         .table-responsive-sm{
           /* padding: -10px; */
@@ -42,7 +43,7 @@
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search Here..">
+                        <input type="text" id="id" class="form-control" placeholder="Search Here..">
                     </div>
                 </form>
             </div>
@@ -89,5 +90,25 @@
         </table>
       </div>
    </div>
+
+
+   <script>
+      $(document).ready(function(e){
+        e.preventDefault;
+        // alert("hello");
+        $('#id').keyup(function(){
+          var input = $('#id').val();
+
+          $.ajax({
+            type: "POST",
+            url: "../actions/fetch.php",
+            data: {input:input},
+            success: function(res){
+              $('table').html(res);
+            }
+          })
+        })
+      })
+   </script>
 </body>
 </html>
