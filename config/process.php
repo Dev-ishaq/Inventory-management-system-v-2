@@ -200,7 +200,7 @@ if(isset($_POST['reg'])){
                     if($stmt->execute()){
                             echo "
                             <script>
-                                swal('Done', 'Staff Added Successfully', 'success')
+                                swal.fire('Done', 'Staff Added Successfully', 'success')
                                 .then(function(result){
                                     if(result){
                                         window.location='../admin/admin_dashboard.php'
