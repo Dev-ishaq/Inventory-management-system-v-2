@@ -134,7 +134,7 @@ if(isset($_POST['reg'])){
                     // header("Location: ../admin/manage_staff.php");
                     echo "
                         <script>
-                            swal.fire('Done', 'Staff Added Successfully', 'success')
+                            swal.fire('Update', 'Staff updated Successfully', 'success')
                             .then(function(result){
                             if(result){
                              window.location=' ../admin/manage_staff.php'
