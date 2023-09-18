@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    
+</head>
+<body>
+    
+</body>
+</html>
 <?php
 
     include "server.php";
@@ -71,18 +84,18 @@ if(isset($_POST['reg'])){
                     if($stmt->execute()){
                             echo "
                             <script>
-                                // swal('Done', 'Staff Added Successfully', 'success')
-                                // .then(function(result){
-                                //     if(result){
-                                //         window.location='../admin/admin_dashboard.php'
-                                //     }});
+                                swal.fire('Done', 'Staff Added Successfully', 'success')
+                                .then(function(result){
+                                    if(result){
+                                        window.location='../admin/admin_dashboard.php'
+                                    }});
 
 
 
 
                                 
-                                alert('Registered successfully')
-                                window.location='../admin/admin_dashboard.php';
+                                // alert('Registered successfully')
+                                // window.location='../admin/admin_dashboard.php';
                             </script>
                         ";
 
@@ -118,11 +131,14 @@ if(isset($_POST['reg'])){
                     $sql = "UPDATE ims SET `full_name`='$fname', `username`='$uname', `number`='$no', `email`='$email', `password`='$pass', `cpassword`='$cpass' WHERE `id`='$id'";
                     $res = $conn->query($sql);
                     if($res){
-                    header("Location: ../admin/manage_staff.php");
-                    // echo "
-                    //     <script>
-                    //         alert('Staff Updated Successful...')
-                    //         window.location = '../sells/manage_product.php';
+                    // header("Location: ../admin/manage_staff.php");
+                    echo "
+                        <script>
+                    swal.fire('Done', 'Staff Added Successfully', 'success')
+                    .then(function(result){
+                        if(result){
+                            window.location='../admin/admin_dashboard.php'
+                        }});
                     //     </script>
                     // ";
                 }else{
