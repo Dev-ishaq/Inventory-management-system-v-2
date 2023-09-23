@@ -90,7 +90,6 @@ if(isset($_POST['sells_btn_reg'])){
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row{
-        /* background-color: aqua; */
         width: 100%;
         }
         body {
