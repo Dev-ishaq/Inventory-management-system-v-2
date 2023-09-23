@@ -20,7 +20,7 @@
         .row {
             width: 100%;
         }
-        body {
+        .container {
             height: 100vh;
         }
     </style>
