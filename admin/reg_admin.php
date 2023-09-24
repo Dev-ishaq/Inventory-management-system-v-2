@@ -134,8 +134,7 @@ if(isset($_POST['reg_admin'])){
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row{
-        /* background-color: aqua; */
-        width: 100%;
+            width: 100%;
         }
         .container {
             height: 100vh;
