@@ -43,15 +43,6 @@
     <div class="table-responsive-sm mt-5 col-md-12">
         <!-- <a href="../sells/sell_product.php" class="text-right btn btn-success mt-5"><i class="fa fa-users"></i> &nbsp;&nbsp;ADD PRODUCT</a> -->
         <a href="../staff/staff_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
-        <div class="row">
-            <div class="col-md-3 offset-md-9">
-                <form action="" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search Here..">
-                    </div>
-                </form>
-            </div>
-        </div>
         <table class="table table-success table-striped table-bordered mt-3">
             <thead>
               <tr>
