@@ -141,7 +141,7 @@ if(isset($_POST['reg_admin'])){
             height: auto;
         }
         .container {
-            height: ;
+            height: 100vh;
         }
     </style>
 </head>
