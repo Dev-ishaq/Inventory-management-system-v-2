@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row {
-            width: auto;
+            width: 100%;
         }
         .container {
             height: 100vh;
