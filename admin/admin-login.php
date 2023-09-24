@@ -11,7 +11,7 @@
             $pass = $_POST['password'];
 
             if(empty($mail)){
-                $errors['email'] = 'Please enter your email first and password<b></b>';
+                $errors['email'] = 'Please enter a valid email first and password<b></b>';
             }
         }
 
