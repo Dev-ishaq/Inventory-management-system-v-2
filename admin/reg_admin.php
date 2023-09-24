@@ -137,9 +137,6 @@ if(isset($_POST['reg_admin'])){
         /* background-color: aqua; */
         width: 100%;
         }
-        body {
-            height: auto;
-        }
         .container {
             height: 100vh;
         }
