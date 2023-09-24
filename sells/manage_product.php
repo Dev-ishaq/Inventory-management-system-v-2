@@ -26,9 +26,6 @@
         table{
           width: 100%;
         }
-        body {
-          /* height: 100vh; */
-        }
     </style>
 <body>
 </head>
@@ -41,7 +38,7 @@
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search Here..">
+                        <!-- <input type="text" class="form-control" placeholder="Search Here.."> -->
                     </div>
                 </form>
             </div>

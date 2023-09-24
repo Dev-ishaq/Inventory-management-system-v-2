@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .row{
-        /* background-color: aqua; */
         width: 100%;
         }
         .container {

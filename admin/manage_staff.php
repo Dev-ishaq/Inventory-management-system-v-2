@@ -19,7 +19,6 @@
     <script src="../css/JQ.js"></script>
     <style>
         .table-responsive-sm{
-          /* padding: -10px; */
           width: 100%;
         }
         .container {
@@ -43,7 +42,7 @@
             <div class="col-md-3 offset-md-9">
                 <form action="" method="post">
                     <div class="form-group">
-                        <input type="text" id="id" class="form-control" placeholder="Search Here..">
+                        <!-- <input type="text" id="id" class="form-control" placeholder="Search Here.."> -->
                     </div>
                 </form>
             </div>
@@ -94,36 +93,36 @@
 
    <script>
 
-const Toast = Swal.fire({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-        // swal.fire('done', 'Welcome Back', 'success')
-  }
-});
+// const Toast = Swal.fire({
+//     toast: true,
+//     position: 'top-end',
+//     showConfirmButton: false,
+//     timer: 3000,
+//     timerProgressBar: true,
+//     didOpen: (toast) => {
+//         toast.addEventListener('mouseenter', Swal.stopTimer)
+//         toast.addEventListener('mouseleave', Swal.resumeTimer)
+//         // swal.fire('done', 'Welcome Back', 'success')
+//   }
+// });
 
 
-      $(document).ready(function(e){
-        e.preventDefault;
-        // alert("hello");
-        $('#id').keyup(function(){
-          var input = $('#id').val();
+//       $(document).ready(function(e){
+//         e.preventDefault;
+//         // alert("hello");
+//         $('#id').keyup(function(){
+//           var input = $('#id').val();
 
-          $.ajax({
-            type: "POST",
-            url: "../actions/fetch.php",
-            data: {input:input},
-            success: function(res){
-              $('table').html(res);
-            }
-          })
-        })
-      });
-   </script>
+//           $.ajax({
+//             type: "POST",
+//             url: "../actions/fetch.php",
+//             data: {input:input},
+//             success: function(res){
+//               $('table').html(res);
+//             }
+//           })
+//         })
+//       });
+//    </script>
 </body>
 </html>

@@ -16,18 +16,21 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
     <style>
-        .table-responsive-sm{
+        /* .table-responsive-sm{
           /* padding: -10px; */
           width: 100%;
-        }
+        } */
         .container {
-          width: 100%;
-        }
-        table{
-          width: 100%;
-        }
-        body {
           height: 100vh;
+        }
+        .row{
+          width: 100%;
+        }
+        /* table{
+          width: 100%;
+        } */
+        body {
+         
         }
     </style>
 <body>
@@ -38,14 +41,6 @@
         <a href="../staff/staff_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
         <a href="../sells/sell_products2.php" class="text-right btn btn-success mt-5"><i class="fa fa-shopping-bag"></i> &nbsp;&nbsp;SELL PRODUCT</a>
         <div class="row">
-            <div class="col-md-3 offset-md-9">
-                <form action="" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search Here..">
-                    </div>
-                </form>
-            </div>
-        </div>
         <table class="table table-success table-striped table-bordered mt-3">
             <thead>
               <tr>
