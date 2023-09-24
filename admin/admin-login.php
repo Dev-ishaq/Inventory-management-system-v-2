@@ -1,5 +1,5 @@
 <?php
-    include "../config/server.php";
+    // include "../config/server.php";
 
         $errors = array();
         $email = "";

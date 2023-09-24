@@ -27,7 +27,7 @@
           width: 100%;
         }
         .container {
-          height: 100%;
+          height: 100vh;
         }
     </style>
 <body>
