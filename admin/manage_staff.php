@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
     <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <script src="../css/JQ.js"></script>
+    <link rel="stylesheet" href="../css/DataTables-1.13.6/css/jquery.dataTables.min.css">
     <style>
         .table-responsive-sm{
           width: 100%;
@@ -35,18 +35,10 @@
 </head>
 <body>
   <div class="container mt-5">
-    <div class="table-responsive-sm mt-5 col-md-12">
+    <div class="mt-5 col-md-12">
         <a href="../admin/admin_dashboard.php" class="text-left btn btn-primary mt-5"><i class="fa fa-backward"></i> &nbsp;&nbsp;BACK</a>
         <a href="../admin/reg2.php" class="text-right btn btn-success mt-5"><i class="fa fa-users"></i> &nbsp;&nbsp;ADD STAFF</a>
-        <div class="row">
-            <div class="col-md-3 offset-md-9">
-                <form action="" method="post">
-                    <div class="form-group">
-                        <!-- <input type="text" id="id" class="form-control" placeholder="Search Here.."> -->
-                    </div>
-                </form>
-            </div>
-        </div>
+        
         <table class="table table-success table-striped table-bordered mt-3">
             <thead>
               <tr>
@@ -89,40 +81,15 @@
         </table>
       </div>
    </div>
-
-
+   
+   <script src="../css/JQ.js"></script>
+   <script src="../css/DataTables-1.13.6/js/jquery.dataTables.min.js"></script>
+   <script src="../css/bootstrap/js/bootstrap.min.js"></script>
    <script>
-
-// const Toast = Swal.fire({
-//     toast: true,
-//     position: 'top-end',
-//     showConfirmButton: false,
-//     timer: 3000,
-//     timerProgressBar: true,
-//     didOpen: (toast) => {
-//         toast.addEventListener('mouseenter', Swal.stopTimer)
-//         toast.addEventListener('mouseleave', Swal.resumeTimer)
-//         // swal.fire('done', 'Welcome Back', 'success')
-//   }
-// });
-
-
-//       $(document).ready(function(e){
-//         e.preventDefault;
-//         // alert("hello");
-//         $('#id').keyup(function(){
-//           var input = $('#id').val();
-
-//           $.ajax({
-//             type: "POST",
-//             url: "../actions/fetch.php",
-//             data: {input:input},
-//             success: function(res){
-//               $('table').html(res);
-//             }
-//           })
-//         })
-//       });
-//    </script>
+      $(document).ready(function(){
+        $('.table').dataTable();
+        
+      });
+   </script>
 </body>
 </html>
