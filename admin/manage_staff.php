@@ -40,9 +40,6 @@
         <a href="../admin/reg2.php" class="text-right btn btn-success mt-5"><i class="fa fa-users"></i> &nbsp;&nbsp;ADD STAFF</a>
         
 
-
-
-
         <table class="table table-success table-striped table-bordered mt-3">
             <thead>
               <tr>
