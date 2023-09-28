@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css"></head>
     <script src="../css/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="../css/DataTables-1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <style>
         .table-responsive-sm{
           width: 100%;
