@@ -82,14 +82,14 @@
       </div>
    </div>
    
-   <script src="../css/JQ.js"></script>
+   <!-- <script src="../css/JQ.js"></script>
    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-   <script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
+   <!-- <script>
       $(document).ready(function(){
         let table = new DataTable('#table');
         
       });
-   </script>
+   </script> -->
 </body>
 </html>

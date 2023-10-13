@@ -16,10 +16,7 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
     <style>
-        /* .table-responsive-sm{
-          /* padding: -10px; */
-          width: 100%;
-        } */
+       
         .container {
           height: 100vh;
         }
